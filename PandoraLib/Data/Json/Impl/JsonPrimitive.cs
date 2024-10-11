@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Numerics;
+﻿using System.Numerics;
 using PandoraLib.Data.Stream.Impl;
 using PandoraLib.Extensions;
 using PandoraLib.Models;

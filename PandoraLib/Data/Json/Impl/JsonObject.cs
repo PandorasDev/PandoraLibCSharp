@@ -11,6 +11,12 @@ public class JsonObject(IDictionary<string, JsonElement> map) : JsonElement
     {
     }
     
+    public JsonElement this[string key]
+    {
+        get => Get(key);
+        set => Add(key, value);
+    }
+    
     [Fluent] 
     public JsonObject Add(string key, object? value)
     {
@@ -30,6 +36,8 @@ public class JsonObject(IDictionary<string, JsonElement> map) : JsonElement
     public bool ContainsKey(string key) => map.ContainsKey(key);
     
     public bool TryGetValue(string key, [MaybeNullWhen(false)] out JsonElement value) => map.TryGetValue(key, out value);
+    
+    public JsonElement Get(string key) => map[key];
     
     
     public static JsonObject Of<T>(IDictionary<string, T> map)

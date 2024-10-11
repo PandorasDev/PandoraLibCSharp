@@ -1,4 +1,5 @@
-﻿using PandoraLib.Data.Stream.Extensions;
+﻿using PandoraLib.Attributes;
+using PandoraLib.Data.Stream.Extensions;
 using PandoraLib.Data.Stream.Impl;
 
 namespace PandoraLib.Data.Json.Impl;
@@ -13,12 +14,15 @@ public class JsonArray(IEnumerable<JsonElement> list) : JsonElement
     {
         return ArrayStream<JsonElement>.Of(_list);
     }
-
+    
+    [Fluent]
     public JsonArray Add(JsonElement json)
     {
         _list.Add(json);
         return this;
     }
+    
+    public JsonElement Get(int i) => _list[i];
 
     public bool Remove(JsonElement json) => _list.Remove(json);
 
@@ -38,5 +42,6 @@ public class JsonArray(IEnumerable<JsonElement> list) : JsonElement
     {
         return JsonParser.ParseArray(jsonString);
     }
-    
+
+    public JsonElement this[int i] => Get(i);
 }

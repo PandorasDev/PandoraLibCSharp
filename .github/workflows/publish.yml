@@ -1,0 +1,25 @@
+﻿name: Publish to NuGet
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: MainBranch
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+      - name: Pack
+        run: dotnet pack --configuration Release --no-build --output ./nupkg
+      - name: Push to NuGet
+        run: dotnet nuget push ./nupkg/*.nupkg --source "https://repo.pandoras.dev/repository/PandoraLibCSharp/" --skip-duplicate --api-key ${{ secrets.NUGET_API_KEY }}

@@ -6,17 +6,19 @@
         <Nullable>enable</Nullable>
         <AssemblyName>PandoraLib.Attributes</AssemblyName>
         <RootNamespace>PandoraLib.Attributes</RootNamespace>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <Title>Attributes for PandoraLib</Title>
         <Copyright>GPL-3.0 license</Copyright>
         <PackageProjectUrl>https://www.nuget.org/packages/PandoraLib.Attributes/</PackageProjectUrl>
-        <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/PandorasDev/PandoraLibCSharp/tree/main/Attributes</RepositoryUrl>
         <PackageTags>PandoraLib, Pandora</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     </PropertyGroup>
     <ItemGroup>
-        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+        <None Include="../README.md" Pack="true" PackagePath="\"/>
+        <None Include="../LICENSE" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
 </Project>

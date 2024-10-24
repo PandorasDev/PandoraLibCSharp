@@ -1,6 +1,6 @@
-﻿using PandoraLib.Data.Stream.Impl;
+﻿using PandoraLib.Stream.Impl;
 
-namespace PandoraLib.Data.Stream.Extensions;
+namespace PandoraLib.Stream.Extensions;
 
 public static class StreamExtension
 {

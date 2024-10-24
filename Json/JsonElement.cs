@@ -1,9 +1,9 @@
-﻿using PandoraLib.Data.Json.Impl;
-using PandoraLib.Data.Stream;
-using PandoraLib.Models;
+﻿using PandoraLib.Json.Impl;
+using PandoraLib.Stream;
+using PandoraLib.Utils;
 
-namespace PandoraLib.Data.Json;
-public abstract class JsonElement: IStreamable
+namespace PandoraLib.Json;
+public abstract class JsonElement
 {
     public abstract IStream Stream();
     public abstract string ToJsonString();

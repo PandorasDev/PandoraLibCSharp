@@ -1,7 +1,7 @@
-﻿using PandoraLib.Data.Json.Impl;
-using PandoraLib.Extensions;
+﻿using PandoraLib.Json.Impl;
+using PandoraLib.Utils.Extensions;
 
-namespace PandoraLib.Data.Json;
+namespace PandoraLib.Json;
 
 public interface IToPandoraJson
 {

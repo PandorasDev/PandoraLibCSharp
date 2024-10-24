@@ -1,10 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Numerics;
-using PandoraLib.Data.Stream.Impl;
-using PandoraLib.Extensions;
-using PandoraLib.Models;
+﻿using System.Numerics;
+using PandoraLib.Stream.Impl;
+using PandoraLib.Utils;
+using PandoraLib.Utils.Extensions;
 
-namespace PandoraLib.Data.Json.Impl;
+namespace PandoraLib.Json.Impl;
 
 public class JsonPrimitive: JsonElement
 {

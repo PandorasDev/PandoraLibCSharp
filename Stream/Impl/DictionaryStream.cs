@@ -1,9 +1,6 @@
-﻿using System.Text.Json.Serialization.Metadata;
-using PandoraLib.Attributes;
-using PandoraLib.Data.Json.Impl;
-using JsonElement = System.Text.Json.JsonElement;
+﻿using PandoraLib.Attributes;
 
-namespace PandoraLib.Data.Stream.Impl;
+namespace PandoraLib.Stream.Impl;
 
 public class DictionaryStream<TKey, TValue>(IDictionary<TKey, TValue> map): IStream where TKey : notnull
 {

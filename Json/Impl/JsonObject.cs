@@ -1,14 +1,20 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using PandoraLib.Attributes;
-using PandoraLib.Data.Stream.Extensions;
-using PandoraLib.Data.Stream.Impl;
+using PandoraLib.Stream.Extensions;
+using PandoraLib.Stream.Impl;
 
-namespace PandoraLib.Data.Json.Impl;
+namespace PandoraLib.Json.Impl;
 
 public class JsonObject(IDictionary<string, JsonElement> map) : JsonElement
 {
     public JsonObject() : this(new Dictionary<string, JsonElement>())
     {
+    }
+    
+    public JsonElement this[string key]
+    {
+        get => Get(key);
+        set => Add(key, value);
     }
     
     [Fluent] 
@@ -30,6 +36,8 @@ public class JsonObject(IDictionary<string, JsonElement> map) : JsonElement
     public bool ContainsKey(string key) => map.ContainsKey(key);
     
     public bool TryGetValue(string key, [MaybeNullWhen(false)] out JsonElement value) => map.TryGetValue(key, out value);
+    
+    public JsonElement Get(string key) => map[key];
     
     
     public static JsonObject Of<T>(IDictionary<string, T> map)

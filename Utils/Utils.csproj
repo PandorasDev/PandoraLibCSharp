@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>PandoraLib.Utils</AssemblyName>
+        <RootNamespace>PandoraLib.Utils</RootNamespace>
+        <Version>1.0.1</Version>
+        <Title>Utils for PandoraLib</Title>
+        <Copyright>GPL-3.0 license</Copyright>
+        <PackageProjectUrl>https://www.nuget.org/packages/PandoraLib.Utils/</PackageProjectUrl>
+        <PackageLicense>https://github.com/PandorasDev/PandoraLibCSharp/blob/main/LICENSE</PackageLicense>
+        <RepositoryUrl>https://github.com/PandorasDev/PandoraLibCSharp/tree/main/Utils</RepositoryUrl>
+        <PackageTags>PandoraLib, Pandora</PackageTags>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="docs\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+</Project>

@@ -1,4 +1,4 @@
-﻿namespace PandoraLib.Data.Stream;
+﻿namespace PandoraLib.Stream;
 
 public interface IStreamable
 {

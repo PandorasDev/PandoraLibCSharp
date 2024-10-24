@@ -1,9 +1,9 @@
 ﻿using System.Text;
 using PandoraLib.Attributes;
-using PandoraLib.Data.Json.Impl;
-using PandoraLib.Models;
+using PandoraLib.Json.Impl;
+using PandoraLib.Utils;
 
-namespace PandoraLib.Data.Json;
+namespace PandoraLib.Json;
 
 [Warning("This parser does not support JSON5 parsing yet. Only standard and Pandora JSON is supported for now.")]
 public static class JsonParser

@@ -1,7 +1,6 @@
-﻿using System.Text;
-using PandoraLib.Attributes;
+﻿using PandoraLib.Attributes;
 
-namespace PandoraLib.Data.Stream.Impl;
+namespace PandoraLib.Stream.Impl;
 
 public class ArrayStream<T>(IEnumerable<T> array) : IStream
 {
@@ -38,6 +37,11 @@ public class ArrayStream<T>(IEnumerable<T> array) : IStream
     public T[] ToArray()
     {
         return array.ToArray();
+    }
+    
+    public T First()
+    {
+        return array.First();
     }
     
     public static ArrayStream<T> Of(IEnumerable<T> array)

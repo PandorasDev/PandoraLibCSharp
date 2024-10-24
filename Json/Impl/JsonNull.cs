@@ -1,7 +1,6 @@
-﻿using PandoraLib.Data.Stream;
-using PandoraLib.Data.Stream.Impl;
+﻿using PandoraLib.Stream.Impl;
 
-namespace PandoraLib.Data.Json.Impl;
+namespace PandoraLib.Json.Impl;
 
 public class JsonNull: JsonElement
 {

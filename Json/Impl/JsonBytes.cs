@@ -1,7 +1,7 @@
 ﻿using PandoraLib.Attributes;
-using PandoraLib.Data.Stream.Impl;
+using PandoraLib.Stream.Impl;
 
-namespace PandoraLib.Data.Json.Impl;
+namespace PandoraLib.Json.Impl;
 
 [Warning("Using this class will break support for normal JSON parsing.")]
 public class JsonBytes: JsonElement

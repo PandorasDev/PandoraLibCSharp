@@ -10,7 +10,7 @@
         <Title>Utils for PandoraLib</Title>
         <Copyright>GPL-3.0 license</Copyright>
         <PackageProjectUrl>https://www.nuget.org/packages/PandoraLib.Utils/</PackageProjectUrl>
-        <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
+        <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/PandorasDev/PandoraLibCSharp/tree/main/Utils</RepositoryUrl>
         <PackageTags>PandoraLib, Pandora</PackageTags>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>

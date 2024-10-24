@@ -10,7 +10,7 @@
         <Title>Json related thing for PandoraLib</Title>
         <Copyright>GPL-3.0 license</Copyright>
         <PackageProjectUrl>https://www.nuget.org/packages/PandoraLib.Json/</PackageProjectUrl>
-        <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
+        <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/PandorasDev/PandoraLibCSharp/tree/main/Json</RepositoryUrl>
         <PackageTags>PandoraLib, Pandora, Json</PackageTags>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>

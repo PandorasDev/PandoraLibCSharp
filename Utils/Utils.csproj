@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <AssemblyName>PandoraLib.Utils</AssemblyName>
         <RootNamespace>PandoraLib.Utils</RootNamespace>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <Title>Utils for PandoraLib</Title>
         <Copyright>GPL-3.0 license</Copyright>
         <PackageProjectUrl>https://www.nuget.org/packages/PandoraLib.Utils/</PackageProjectUrl>

@@ -1,8 +1,7 @@
 ﻿name: test.yml
+
 on:
-  push:
-    branches:
-      - dev
+  
 jobs:
   test:
     name: Run Tests
@@ -19,3 +18,5 @@ jobs:
         run: dotnet build --configuration Debug --no-restore
       - name: Run tests
         run: dotnet test --no-build --verbosity normal --logger "trx;LogFileName=test_results.trx"
+
+

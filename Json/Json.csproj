@@ -6,17 +6,20 @@
         <Nullable>enable</Nullable>
         <AssemblyName>PandoraLib.Json</AssemblyName>
         <RootNamespace>PandoraLib.Json</RootNamespace>
-        <Version>0.0.1</Version>
+        <Version>1.0.1</Version>
         <Title>Json related thing for PandoraLib</Title>
         <Copyright>GPL-3.0 license</Copyright>
-        <PackageProjectUrl>https://github.com/PandorasDev/PandoraLibCSharp/tree/main/Json</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/PandorasDev/PandoraLibCSharp/blob/main/LICENSE</PackageLicenseUrl>
+        <PackageProjectUrl>https://www.nuget.org/packages/PandoraLib.Json/</PackageProjectUrl>
+        <PackageLicense>https://github.com/PandorasDev/PandoraLibCSharp/blob/main/LICENSE</PackageLicense>
+        <RepositoryUrl>https://github.com/PandorasDev/PandoraLibCSharp/tree/main/Json</RepositoryUrl>
+        <PackageTags>PandoraLib, Pandora, Json</PackageTags>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     </PropertyGroup>
-
     <ItemGroup>
-      <ProjectReference Include="..\Attributes\Attributes.csproj" />
-      <ProjectReference Include="..\Stream\Stream.csproj" />
-      <ProjectReference Include="..\Utils\Utils.csproj" />
+        <None Include="docs\README.md" Pack="true" PackagePath="\"/>
+        <ProjectReference Include="..\Attributes\Attributes.csproj"/>
+        <ProjectReference Include="..\Stream\Stream.csproj"/>
+        <ProjectReference Include="..\Utils\Utils.csproj"/>
     </ItemGroup>
 
 </Project>

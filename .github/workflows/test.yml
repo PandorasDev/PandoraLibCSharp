@@ -16,9 +16,7 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
       - name: Build
-        run: dotnet build --configuration Release --no-restore
-      - name: Verify Test DLL Path
-        run: ls /home/runner/work/PandoraLibCSharp/PandoraLibCSharp/Tests/bin/Debug/net8.0/
+        run: dotnet build --configuration Debug --no-restore
       - name: Run tests
         run: dotnet test --no-build --verbosity normal --logger "trx;LogFileName=test_results.trx"
       - name: Show test results

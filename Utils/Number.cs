@@ -139,6 +139,11 @@ public class Number
 
     public static Number Parse(string value)
     {
+        if (value.Contains('E'))
+        {
+            var v = BigInteger.Parse(value, NumberStyles.AllowExponent | NumberStyles.Float, CultureInfo.InvariantCulture);
+            return Of(v);
+        }
         if (value.Contains('.'))
         {
             var v = double.Parse(value, CultureInfo.InvariantCulture);
@@ -146,7 +151,7 @@ public class Number
         }
         else
         {
-            if (!BigInteger.TryParse(value, NumberStyles.AllowExponent, CultureInfo.InvariantCulture, out var v)) throw new OverflowException();
+            if (!BigInteger.TryParse(value, CultureInfo.InvariantCulture, out var v)) throw new FormatException();
             return v switch
             {
                 _ when v <= short.MaxValue && v >= short.MinValue => Of((short) v),

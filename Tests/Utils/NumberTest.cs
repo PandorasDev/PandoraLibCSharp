@@ -42,8 +42,12 @@ public class NumberTest
     }
 
     [Test]
-    public void Parse_OverflowValue_ThrowsOverflowException()
+    public void Parse_Exponent()
     {
-        Assert.Throws<OverflowException>(() => Number.Parse("1E+1000"), "Expected OverflowException");
+        Assert.DoesNotThrow(() =>
+        {
+            var number = Number.Parse("1E+1000");
+            number.GetAsBigInteger();
+        }, "Expected no exception");
     }
 }

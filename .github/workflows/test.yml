@@ -1,7 +1,9 @@
 ﻿name: test.yml
 
 on:
-  
+  check_run:
+    types: [rerequested, completed]
+    
 jobs:
   test:
     name: Run Tests

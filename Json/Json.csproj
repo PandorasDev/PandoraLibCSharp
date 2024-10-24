@@ -10,13 +10,13 @@
         <Title>Json related thing for PandoraLib</Title>
         <Copyright>GPL-3.0 license</Copyright>
         <PackageProjectUrl>https://www.nuget.org/packages/PandoraLib.Json/</PackageProjectUrl>
-        <PackageLicense>https://github.com/PandorasDev/PandoraLibCSharp/blob/main/LICENSE</PackageLicense>
+        <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/PandorasDev/PandoraLibCSharp/tree/main/Json</RepositoryUrl>
         <PackageTags>PandoraLib, Pandora, Json</PackageTags>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     </PropertyGroup>
     <ItemGroup>
-        <None Include="docs\README.md" Pack="true" PackagePath="\"/>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
         <ProjectReference Include="..\Attributes\Attributes.csproj"/>
         <ProjectReference Include="..\Stream\Stream.csproj"/>
         <ProjectReference Include="..\Utils\Utils.csproj"/>

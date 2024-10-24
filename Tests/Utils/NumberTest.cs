@@ -50,4 +50,10 @@ public class NumberTest
             number.GetAsBigInteger();
         }, "Expected no exception");
     }
+
+    [Test]
+    public void FakeTest()
+    {
+        Assert.Fail("This is to test the github action. If it blocks the merge to main branch.");
+    }
 }

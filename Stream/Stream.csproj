@@ -16,8 +16,8 @@
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     </PropertyGroup>
     <ItemGroup>
-        <None Include="docs\README.md" Pack="true" PackagePath="\"/>
-      <ProjectReference Include="..\Attributes\Attributes.csproj" />
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+        <ProjectReference Include="..\Attributes\Attributes.csproj"/>
     </ItemGroup>
 
 </Project>

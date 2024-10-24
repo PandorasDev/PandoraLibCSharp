@@ -1,8 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandoraLib", "PandoraLib\PandoraLib.csproj", "{FCEE243E-1970-4639-AA97-C023BA6535B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json", "Json\Json.csproj", "{AB92167D-E10F-4C0A-BA48-89D81ACFBFC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandoraLibTests", "PandoraLibTests\PandoraLibTests.csproj", "{395EBE28-6482-4229-B5E2-EA133EB678D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attributes", "Attributes\Attributes.csproj", "{FF4539D5-6075-4B30-898B-033574BC0722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream", "Stream\Stream.csproj", "{E6B006A7-65AA-4148-AB9E-5D92CADBD546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{E166E730-A809-404A-8C1E-B8A21307AF0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{DFA33532-CD47-47E7-9033-D497C11AF9AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,13 +16,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FCEE243E-1970-4639-AA97-C023BA6535B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCEE243E-1970-4639-AA97-C023BA6535B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCEE243E-1970-4639-AA97-C023BA6535B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCEE243E-1970-4639-AA97-C023BA6535B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{395EBE28-6482-4229-B5E2-EA133EB678D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{395EBE28-6482-4229-B5E2-EA133EB678D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{395EBE28-6482-4229-B5E2-EA133EB678D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{395EBE28-6482-4229-B5E2-EA133EB678D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB92167D-E10F-4C0A-BA48-89D81ACFBFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB92167D-E10F-4C0A-BA48-89D81ACFBFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB92167D-E10F-4C0A-BA48-89D81ACFBFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB92167D-E10F-4C0A-BA48-89D81ACFBFC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF4539D5-6075-4B30-898B-033574BC0722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF4539D5-6075-4B30-898B-033574BC0722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF4539D5-6075-4B30-898B-033574BC0722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF4539D5-6075-4B30-898B-033574BC0722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6B006A7-65AA-4148-AB9E-5D92CADBD546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B006A7-65AA-4148-AB9E-5D92CADBD546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B006A7-65AA-4148-AB9E-5D92CADBD546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B006A7-65AA-4148-AB9E-5D92CADBD546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E166E730-A809-404A-8C1E-B8A21307AF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E166E730-A809-404A-8C1E-B8A21307AF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E166E730-A809-404A-8C1E-B8A21307AF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E166E730-A809-404A-8C1E-B8A21307AF0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA33532-CD47-47E7-9033-D497C11AF9AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA33532-CD47-47E7-9033-D497C11AF9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA33532-CD47-47E7-9033-D497C11AF9AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA33532-CD47-47E7-9033-D497C11AF9AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

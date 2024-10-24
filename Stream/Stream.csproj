@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>PandoraLib.Stream</AssemblyName>
+        <RootNamespace>PandoraLib.Stream</RootNamespace>
+        <Version>0.0.1</Version>
+        <Title>Stream API for PandoraLib</Title>
+        <Copyright>GPL-3.0 license</Copyright>
+        <PackageProjectUrl>https://github.com/PandorasDev/PandoraLibCSharp/tree/main/Stream</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/PandorasDev/PandoraLibCSharp/blob/main/LICENSE</PackageLicenseUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Attributes\Attributes.csproj" />
+    </ItemGroup>
+
+</Project>
